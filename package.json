@@ -26,9 +26,7 @@
     "storybook": "start-storybook -p 6006 -s .storybook/static"
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint-staged"
-    }
+    "hooks": {}
   },
   "lint-staged": {
     "*.html": [
