@@ -12,7 +12,7 @@ export default {
 };
 
 export const Basic = (args) => <Button {...args} />;
-Basic.args = { children: 'Label' };
+Basic.args = { appearance: 'primary', children: 'Label' };
 
 export const All = () => (
   <>
