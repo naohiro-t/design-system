@@ -9,9 +9,18 @@ import { StoryLinkWrapper } from './StoryLinkWrapper';
 export default {
   title: 'Button',
   component: Button,
+  argTypes: {
+    customControl: {
+      control: {
+        type: 'select', // Type 'select' is automatically inferred when 'options' is defined
+        options: ['Item One', 'Item Two', 'Item Three']
+      }
+    }
+  }
 };
 
-export const Basic = (args) => <Button {...args} />;
+// eslint-disable-next-line react/prop-types
+export const Basic = (customControl, args) => <Button {...customControl} {...args} />;
 Basic.args = { appearance: 'primary', children: 'Label' };
 
 export const All = () => (

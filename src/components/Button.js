@@ -406,6 +406,7 @@ export const Button = forwardRef(
 
 Button.propTypes = {
   ...buttonStyleProps,
+  customControl: PropTypes.string,
   children: PropTypes.node.isRequired,
   isDisabled: PropTypes.bool,
   /**
